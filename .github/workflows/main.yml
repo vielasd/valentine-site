@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine, kupal!</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .hello-kitty {
+            width: 200px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .heart {
+            color: red;
+            font-size: 30px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px red; }
+            to { box-shadow: 0 0 20px yellow; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>my labs so mach! kung sino kaman awit basag gg 💖</h1>
+        <p>Will you be my Valentine? ayos sagot 🥰</p>
+        <img src="https://i.imgur.com/Ngkcwid.jpeg" alt="Hello Kitty">
+        <br><br>
+        <button class="button" onclick="sayYes()">Yes! 💘</button>
+        <button class="button" style="background-color: gray;" onclick="sayNo()">No 😢</button>
+        <p id="response"></p>
+    </div>
+    
+    <script>
+        function sayYes() {
+            document.getElementById('response').innerHTML = "Yay! I love you, kung sino kaman! 💖💖💖";
+        }
+        function sayNo() {
+            alert("That's not an option kupal sakin ka! 😜");
+        }
+    </script>
+</body>
+</html>
